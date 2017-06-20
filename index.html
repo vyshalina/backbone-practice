@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Backbone.js</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div id="filter"><label>Отфильтровать по отделу:</label></div>
+        </header>    
+        <table id="contacts">
+             <tr>
+                <th>ФИО</th>
+                <th>Должность</th>
+                <th>Отдел</th>
+                <th>Телефон</th>
+                <th>E-mail</th>
+                <th>Редактировать</th>
+                <th>Удалить</th>
+            </tr>
+        </table>
+        <script id="contactTemplate" type="text/template">
+            <td><%= name %></td>
+            <td><%= job %></td>
+            <td><%= dep %></td>
+            <td><%= tel %></td>
+            <td><a href="mailto:<%= email %>"><%= email %></a></td>
+        </script>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/underscore-min.js"></script>
+        <script src="js/backbone-min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
